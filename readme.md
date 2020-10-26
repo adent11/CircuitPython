@@ -40,4 +40,4 @@ while True:
 
 
 ### Reflection
-At first I wasn't able to control the LED, but after updating the board [here](https://circuitpython.org/board/metro_m0_express/), and getting the correct library [here](https://circuitpython.org/libraries), it worked fine. It is very convinient that the Metro Express has a built in LED.
+At first I wasn't able to control the LED, but after updating the board [here](https://circuitpython.org/board/metro_m0_express/), and getting the correct library [here](https://circuitpython.org/libraries), it worked fine. It is very convenient that the Metro Express has a built in LED.
