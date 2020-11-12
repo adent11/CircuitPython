@@ -38,7 +38,6 @@ while True:
     print("Blue Level:", x)
 ```
 
-
 ### Reflection
 At first I wasn't able to control the LED, but after updating the board [here](https://circuitpython.org/board/metro_m0_express/), and getting the correct library [here](https://circuitpython.org/libraries), it worked fine. I found it convenient that the Metro Express has a built in LED. While I was documenting this assignment in Github, I changed the name of the file from ```main.py``` to ```HelloCircuitPython.py```, which is what I am used to doing with Arduino code. After I did this, it stopped working, and the light was pulsing green. I found [this](https://learn.adafruit.com/adafruit-metro-m0-express-designed-for-circuitpython/troubleshooting) website which told me what the light meant, and found out [here](https://learn.adafruit.com/adafruit-metro-m0-express-designed-for-circuitpython/creating-and-editing-code) that it only runs files named ```code.py```, ```code.txt```, ```main.py```, or ```main.txt```.
 
@@ -61,6 +60,7 @@ while True:
     my_servo.angle = angle
     time.sleep(.01)
 ```
+This code makes the servo turn to the counterclockwise when one wire is touched and clockwise when the other wire is touched.
 
 ### Wiring
 
