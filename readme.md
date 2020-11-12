@@ -15,7 +15,7 @@ This is my repository for the introductory CircuitPython assignments.
 
 In this assignment I got the Metro M0 Express board working, and coded a simple fade between green and blue with the built in LED.
 
-### Code
+### [Code](https://github.com/adent11/CircuitPython/blob/master/HelloCircuitPython.py)
 
 ``` python
 import board
@@ -49,7 +49,18 @@ At first I wasn't able to control the LED, but after updating the board [here](h
 ### Description
 In this assignment I first got a servo to move back and forth, and then used capacative touch to control the movement of the servo based on touching wires.
 
-### Code
+### [Code](https://github.com/adent11/CircuitPython/blob/master/CircuitPythonServo.py)
+
+``` python
+while True:
+    if touch1.value and not touch2.value and angle < 180:
+        angle += 1
+    if touch2.value and not touch1.value and angle > 0:
+        angle -= 1
+    print(angle)
+    my_servo.angle = angle
+    time.sleep(.01)
+```
 
 ### Wiring
 
