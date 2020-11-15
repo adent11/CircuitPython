@@ -15,7 +15,7 @@ This is my repository for the introductory CircuitPython assignments.
 
 In this assignment I got the Metro M0 Express board working, and coded a simple fade between green and blue with the built in LED.
 
-### Code
+### [Code](https://github.com/adent11/CircuitPython/blob/master/HelloCircuitPython.py)
 
 ``` python
 import board
@@ -38,6 +38,31 @@ while True:
     print("Blue Level:", x)
 ```
 
-
 ### Reflection
 At first I wasn't able to control the LED, but after updating the board [here](https://circuitpython.org/board/metro_m0_express/), and getting the correct library [here](https://circuitpython.org/libraries), it worked fine. I found it convenient that the Metro Express has a built in LED. While I was documenting this assignment in Github, I changed the name of the file from ```main.py``` to ```HelloCircuitPython.py```, which is what I am used to doing with Arduino code. After I did this, it stopped working, and the light was pulsing green. I found [this](https://learn.adafruit.com/adafruit-metro-m0-express-designed-for-circuitpython/troubleshooting) website which told me what the light meant, and found out [here](https://learn.adafruit.com/adafruit-metro-m0-express-designed-for-circuitpython/creating-and-editing-code) that it only runs files named ```code.py```, ```code.txt```, ```main.py```, or ```main.txt```.
+
+---
+
+## CircuitPython Servo
+
+### Description
+In this assignment I first got a servo to move back and forth, and then used capacative touch to control the movement of the servo based on touching wires.
+
+### [Code](https://github.com/adent11/CircuitPython/blob/master/CircuitPythonServo.py)
+
+``` python
+while True:
+    if touch1.value and not touch2.value and angle < 180:
+        angle += 1
+    if touch2.value and not touch1.value and angle > 0:
+        angle -= 1
+    print(angle)
+    my_servo.angle = angle
+    time.sleep(.01)
+```
+This code makes the servo turn to the counterclockwise when one wire is touched and clockwise when the other wire is touched.
+
+### Wiring
+
+### Reflection
+In this assignment I made a couple simple mistakes that cost me a lot of time. On the Metro M0 Express servos use the analog pins to receive the signal telling them how to move, whereas on the Arduino they use digital. Also, since Python doens't use brackets for if statements, I found it easy to forget to put a colon. Other than that the servo and capacative touch parts of the code were fairly straightforward with the information from [this website](https://learn.adafruit.com/circuitpython-essentials/circuitpython-servo) for the servo and [this website](https://learn.adafruit.com/adafruit-metro-m0-express-designed-for-circuitpython/circuitpython-cap-touch) for capacative touch.
