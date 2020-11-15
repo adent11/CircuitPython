@@ -64,7 +64,7 @@ This code makes the servo turn to the counterclockwise when one wire is touched 
 
 ### Wiring
 
-<img src="Media/CircuitPythonServoWiring.pdf" alt="Servo Wiring" height="150">
+<img src="Media/CircuitPythonServoWiring.pdf" alt="Servo Wiring">
 
 ### Reflection
 In this assignment I made a couple simple mistakes that cost me a lot of time. On the Metro M0 Express servos use the analog pins to receive the signal telling them how to move, whereas on the Arduino they use digital. Also, since Python doens't use brackets for if statements, I found it easy to forget to put a colon. Other than that the servo and capacative touch parts of the code were fairly straightforward with the information from [this website](https://learn.adafruit.com/circuitpython-essentials/circuitpython-servo) for the servo and [this website](https://learn.adafruit.com/adafruit-metro-m0-express-designed-for-circuitpython/circuitpython-cap-touch) for capacative touch.
