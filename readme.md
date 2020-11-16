@@ -6,6 +6,7 @@ This is my repository for the introductory CircuitPython assignments.
 ## Table of Contents
 * [Table of Contents](#Table-of-Contents)
 * [Hello CircuitPython](#Hello-CircuitPython)
+* [CircuitPython Servo](#CircuitPython-Servo)
 
 ---
 
