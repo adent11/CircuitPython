@@ -19,6 +19,7 @@ buttonPressed = False
 lcd.print("Hello, Engineer!")
 while True:
 
+    # Adjusts increment and value based on if the wires are touched
     if switch.value and not switchFlipped:
         change = change*-1
         switchFlipped = True
@@ -29,11 +30,15 @@ while True:
         buttonPressed = True
     if not button.value:
         buttonPressed = False
+
+    #Prints the increment and value to the LCD
     lcd.clear()
     lcd.set_cursor_pos(0,0)
     lcd.print('Increment ' + str(change))
     lcd.set_cursor_pos(1,0)
     lcd.print('Value ' + str(value))
-    print('Incrementing by ' + str(change))
-    print('Value is ' + str(value))
+
+    #Prints the increment and value to the serial monitor
+    print('Increment ' + str(change))
+    print('Value ' + str(value))
     time.sleep(.1)
