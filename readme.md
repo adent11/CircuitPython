@@ -114,3 +114,4 @@ This assignment was to count up every time something goes between the arms of th
 <img src="Media/CircuitPythonPhotointerrupterWiring.png" width="200" /> 
 
 ### Reflection
+The photointerrupter was pretty easy to code, I just had to learn the syntax for using digital pins for input: ```pinName = digitalio.DigitalInOut(board.D8)```, ```photoPin.direction = digitalio.Direction.INPUT```, and ```photoPin.pull = digitalio.Pull.UP``` to set it up and then ```pinName.value``` is a boolean that is true when there is input. Another thing that I learned how to use in this assingment is ```time.monotonic()``` which is a timer that counts up and can be used instead of the sleep function.
