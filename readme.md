@@ -89,8 +89,11 @@ In this assignment the goal was to use two buttons or capacative touch wires to 
     lcd.set_cursor_pos(1,0)
     lcd.print('Value ' + str(value))
 ```
+This code prints the value and increment on the LCD.
 
 ### Wiring
+
+<img src="Media/CircuitPythonLCDWiring.png" width="200" /> 
 
 ### Reflection
 The LCD code functions the same way with CircuitPython as Arduino, just with different syntax. I faced two main challenges in printing the message to the LCD. The first was that before printing (or inside the print statement) you have to convert integers or other data types into strings using the ```str(x)``` function. The other was that I was limited in the amount of characters I could print to the LCD at a time. I solved this by shortening my message, but I could also have used a longer message that I only printed once, then only replace new characters.
