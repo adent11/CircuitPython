@@ -111,6 +111,6 @@ The LCD code functions the same way with CircuitPython as Arduino, just with dif
 
 ### Wiring
 
-<img src="Media/CircuitPythonPhotinterrupterWiring.png" width="200" /> 
+<img src="Media/CircuitPythonPhotointerrupterWiring.png" width="200" /> 
 
 ### Reflection
