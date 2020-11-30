@@ -118,7 +118,7 @@ This assignment was to count up every time something goes between the arms of th
         lcd.print(str(counter))
 
 ```
-This code prints the amount of interrupts every 4 seconds. It shows how to use ```time.monotonic``` instead of ```sleep()```.
+This code prints the amount of interrupts every 4 seconds. It shows how to use ```time.monotonic``` instead of ```time.sleep()```.
 
 ### Wiring
 
