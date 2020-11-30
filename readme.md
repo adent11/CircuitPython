@@ -145,3 +145,4 @@ In this assignment I used a distance sensor to change the color of the neopixel 
 <img src="Media/CircuitPythonDistanceSensorWiring.png" width="200" /> 
 
 ### Reflection
+I used Meg's [CircuitPython repository](https://github.com/mgist56/CircuitPython) for help.
