@@ -8,6 +8,7 @@ This is my repository for the introductory CircuitPython assignments.
 * [Hello CircuitPython](#Hello-CircuitPython)
 * [CircuitPython Servo](#CircuitPython-Servo)
 * [CircuitPython LCD](#CircuitPython-LCD)
+* [CircuitPython Photointerrupter](#CircuitPython-Photointerrupter)
 
 ---
 
@@ -97,3 +98,19 @@ This code prints the value and increment on the LCD.
 
 ### Reflection
 The LCD code functions the same way with CircuitPython as Arduino, just with different syntax. I faced two main challenges in printing the message to the LCD. The first was that before printing (or inside the print statement) you have to convert integers or other data types into strings using the ```str(x)``` function. The other was that I was limited in the amount of characters I could print to the LCD at a time. I solved this by shortening my message, but I could also have used a longer message that I only printed once, then only replace new characters.
+
+---
+
+## CircuitPython Photointerrupter
+
+### Description
+
+
+
+### [Code](https://github.com/adent11/CircuitPython/blob/master/CircuitPythonPhotinterrupter.py)
+
+### Wiring
+
+<img src="Media/CircuitPythonPhotinterrupterWiring.png" width="200" /> 
+
+### Reflection
