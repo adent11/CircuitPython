@@ -135,7 +135,7 @@ The photointerrupter was pretty easy to code, I just had to learn the syntax for
 ### Description
 
 In this assignment I used a distance sensor to change the color of the neopixel LED according to the graphic below, and to print the distance on the serial monitor.
-<img src="Media/CircuitPythonDistanceSensorWiring.png" width="400" /> 
+<img src="Media/DistanceSensorLEDMapping.png" width="400" /> 
 
 ### [Code](https://github.com/adent11/CircuitPython/blob/master/CircuitDistanceSensor.py)
 
