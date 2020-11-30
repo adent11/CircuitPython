@@ -105,7 +105,7 @@ The LCD code functions the same way with CircuitPython as Arduino, just with dif
 
 ### Description
 
-
+This assignment was to count up every time something goes between the arms of the photointerrupter and then print that to the LCD every 4 seconds, but not use the sleep() function.
 
 ### [Code](https://github.com/adent11/CircuitPython/blob/master/CircuitPythonPhotinterrupter.py)
 
