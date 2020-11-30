@@ -109,6 +109,17 @@ This assignment was to count up every time something goes between the arms of th
 
 ### [Code](https://github.com/adent11/CircuitPython/blob/master/CircuitPythonPhotointerrupter.py)
 
+``` python
+    if time.monotonic() > lastTime + 4:
+        lastTime = time.monotonic()
+        lcd.set_cursor_pos(1, 0)
+        lcd.print('         ')
+        lcd.set_cursor_pos(1, 0)
+        lcd.print(str(counter))
+
+```
+This code prints the amount of interrupts every 4 seconds. It shows how to use ```time.monotonic``` instead of ```sleep()```.
+
 ### Wiring
 
 <img src="Media/CircuitPythonPhotointerrupterWiring.png" width="200" /> 
