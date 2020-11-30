@@ -81,6 +81,14 @@ In this assignment the goal was to use two buttons or capacative touch wires to 
 
 ### [Code](https://github.com/adent11/CircuitPython/blob/master/CircuitPythonLCD.py)
 
+``` python
+    lcd.clear()
+    lcd.set_cursor_pos(0,0)
+    lcd.print('Increment ' + str(change))
+    lcd.set_cursor_pos(1,0)
+    lcd.print('Value ' + str(value))
+```
+
 ### Wiring
 
 ### Reflection
