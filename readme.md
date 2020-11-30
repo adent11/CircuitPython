@@ -9,6 +9,7 @@ This is my repository for the introductory CircuitPython assignments.
 * [CircuitPython Servo](#CircuitPython-Servo)
 * [CircuitPython LCD](#CircuitPython-LCD)
 * [CircuitPython Photointerrupter](#CircuitPython-Photointerrupter)
+* [CircuitPython Distance Sensor](#CircuitPython-Distance-Sensor)
 
 ---
 
@@ -126,3 +127,20 @@ This code prints the amount of interrupts every 4 seconds. It shows how to use `
 
 ### Reflection
 The photointerrupter was pretty easy to code, I just had to learn the syntax for using digital pins for input: ```pinName = digitalio.DigitalInOut(board.D8)```, ```photoPin.direction = digitalio.Direction.INPUT```, and ```photoPin.pull = digitalio.Pull.UP``` to set it up and then ```pinName.value``` is a boolean that is true when there is input. Another thing that I learned how to use in this assingment is ```time.monotonic()``` which is a timer that counts up and can be used instead of the sleep function.
+
+---
+
+## CircuitPython Distance Sensor
+
+### Description
+
+In this assignment I used a distance sensor to change the color of the neopixel LED according to the graphic below, and to print the distance on the serial monitor.
+<img src="Media/CircuitPythonDistanceSensorWiring.png" width="400" /> 
+
+### [Code](https://github.com/adent11/CircuitPython/blob/master/CircuitDistanceSensor.py)
+
+### Wiring
+
+<img src="Media/CircuitPythonDistanceSensorWiring.png" width="200" /> 
+
+### Reflection
