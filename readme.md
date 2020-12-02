@@ -85,11 +85,11 @@ In this assignment the goal was to use two buttons or capacative touch wires to 
 ### [Code](https://github.com/adent11/CircuitPython/blob/master/CircuitPythonLCD.py)
 
 ``` python
-    lcd.clear()
-    lcd.set_cursor_pos(0,0)
-    lcd.print('Increment ' + str(change))
-    lcd.set_cursor_pos(1,0)
-    lcd.print('Value ' + str(value))
+lcd.clear()
+lcd.set_cursor_pos(0,0)
+lcd.print('Increment ' + str(change))
+lcd.set_cursor_pos(1,0)
+lcd.print('Value ' + str(value))
 ```
 This code prints the value and increment on the LCD.
 
@@ -111,13 +111,12 @@ This assignment was to count up every time something goes between the arms of th
 ### [Code](https://github.com/adent11/CircuitPython/blob/master/CircuitPythonPhotointerrupter.py)
 
 ``` python
-    if time.monotonic() > lastTime + 4:
-        lastTime = time.monotonic()
-        lcd.set_cursor_pos(1, 0)
-        lcd.print('         ')
-        lcd.set_cursor_pos(1, 0)
-        lcd.print(str(counter))
-
+if time.monotonic() > lastTime + 4:
+    lastTime = time.monotonic()
+    lcd.set_cursor_pos(1, 0)
+    lcd.print('         ')
+    lcd.set_cursor_pos(1, 0)
+    lcd.print(str(counter))
 ```
 This code prints the amount of interrupts every 4 seconds. It shows how to use ```time.monotonic``` instead of ```time.sleep()```.
 
@@ -153,10 +152,11 @@ In this assignment I used a distance sensor to change the color of the neopixel 
             g = simpleio.map_range(dist, 20, 35, 0, 255)
         neopixel.fill((int(r), int(g), int(b)))
 ```
+This code takes the distance from the ultrasonic sensor and maps it to the color ranges indicated above, then sets the neopixel to that color.
 
 ### Wiring
 
 <img src="Media/CircuitPythonDistanceSensorWiring.png" width="200" /> 
 
 ### Reflection
-I used Meg's [CircuitPython repository](https://github.com/mgist56/CircuitPython) for help.
+I used Meg's [CircuitPython repository](https://github.com/mgist56/CircuitPython) for help. Using the distance sensor was pretty easy with the right syntax. I learned that in the simplio library there is a map function, shown above, which I used to convert the distance to an rgb color. I also learned how to use try: and except. When using something that is likely to give an error, then you can use try: to do what you want and except typeOfError: to make sure that the code doesn't break.
