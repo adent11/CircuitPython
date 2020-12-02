@@ -140,6 +140,20 @@ In this assignment I used a distance sensor to change the color of the neopixel 
 
 ### [Code](https://github.com/adent11/CircuitPython/blob/master/CircuitPythonDistanceSensor.py)
 
+``` python
+        dist = ultrasonic.distance
+        print(dist)
+        if dist <= 20:
+            r = simpleio.map_range(dist, 0, 20, 255, 0)
+            b = simpleio.map_range(dist, 5, 20, 0, 255)
+            g = simpleio.map_range(dist, 20, 35, 0, 255)
+        else:
+            r = simpleio.map_range(dist, 0, 20, 255, 0)
+            b = simpleio.map_range(dist, 20, 35, 255, 0)
+            g = simpleio.map_range(dist, 20, 35, 0, 255)
+        neopixel.fill((int(r), int(g), int(b)))
+```
+
 ### Wiring
 
 <img src="Media/CircuitPythonDistanceSensorWiring.png" width="200" /> 
