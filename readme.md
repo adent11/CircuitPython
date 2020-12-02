@@ -138,7 +138,7 @@ In this assignment I used a distance sensor to change the color of the neopixel 
 
 <img src="Media/DistanceSensorLEDMapping.png" width="400" /> 
 
-### [Code](https://github.com/adent11/CircuitPython/blob/master/CircuitDistanceSensor.py)
+### [Code](https://github.com/adent11/CircuitPython/blob/master/CircuitPythonDistanceSensor.py)
 
 ### Wiring
 
