@@ -80,7 +80,7 @@ In this assignment I made a couple simple mistakes that cost me a lot of time. O
 
 ### Description
 
-In this assignment the goal was to use two buttons or capacative touch wires to change a value and the increment. One wire acted as a switch, changing the increment between -1 and 1, and the other wire adding the increment to a value. Both the increment and value are then printen on an LCD display.
+In this assignment the goal was to use two buttons or capacative touch wires to change a value and the increment. One wire acted as a switch, changing the increment between -1 and 1, and the other wire adding the increment to a value. Both the increment and value are then printed on an LCD display.
 
 ### [Code](https://github.com/adent11/CircuitPython/blob/master/CircuitPythonLCD.py)
 
