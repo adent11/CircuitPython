@@ -10,6 +10,7 @@ This is my repository for the introductory CircuitPython assignments.
 * [CircuitPython LCD](#CircuitPython-LCD)
 * [CircuitPython Photointerrupter](#CircuitPython-Photointerrupter)
 * [CircuitPython Distance Sensor](#CircuitPython-Distance-Sensor)
+* [Classes, Objects, and Modules](#Classes,-Objects,-and-Modules)
 
 ---
 
@@ -160,3 +161,15 @@ This code takes the distance from the ultrasonic sensor and maps it to the color
 
 ### Reflection
 I used Meg's [CircuitPython repository](https://github.com/mgist56/CircuitPython) for help. Using the distance sensor was pretty easy with the right syntax. I learned that in the simplio library there is a map function, shown above, which I used to convert the distance to an rgb color. I also learned how to use try: and except. When using something that is likely to give an error, then you can use try: to do what you want and except typeOfError: to make sure that the code doesn't break.
+
+---
+
+## Classes, Objects, and Modules
+
+### Description
+
+### [Code](https://github.com/adent11/CircuitPython/blob/master/CircuitPythonDistanceSensor.py)
+
+### Wiring
+
+### Reflection
