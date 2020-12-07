@@ -10,7 +10,7 @@ This is my repository for the introductory CircuitPython assignments.
 * [CircuitPython LCD](#CircuitPython-LCD)
 * [CircuitPython Photointerrupter](#CircuitPython-Photointerrupter)
 * [CircuitPython Distance Sensor](#CircuitPython-Distance-Sensor)
-* [Classes, Objects, and Modules](#Classes,-Objects,-and-Modules)
+* [Classes, Objects, and Modules](#Classes-Objects-and-Modules)
 
 ---
 
